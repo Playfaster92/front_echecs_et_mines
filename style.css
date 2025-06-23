@@ -139,3 +139,92 @@ footer p {
   margin-top: 0;
   color: #6e2c00;
 }
+
+.photo-joueur {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #333;
+}
+
+.joueur-conteneur {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* espace entre image et texte */
+}
+
+.photo-joueur {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #333;
+  flex-shrink: 0; /* éviter que l'image se réduise */
+}
+
+.joueur-info {
+  max-width: 600px; /* optionnel : limite la largeur du texte */
+}
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* pousse le footer vers le bas */
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+#members-asso {
+  margin-top: 2rem;
+  background: #f0f4f8;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-left: auto;         
+  margin-right: auto;
+}
+
+.liste-membres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-membres li {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  flex: 1 1 320px;
+}
+
+.membre-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+  border: 2px solid #ccc;
+}
